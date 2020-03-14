@@ -1,0 +1,22 @@
+mixin feedback()
+  section.feedback
+    .container
+      .feedback__container
+        .feedback__title Форма для Ваших вопросов
+        .feedback__wrp
+          .feedback__questions
+            img(src="static/images/questions.png" alt="qqq")
+          form(class="feedback__form" method="post")
+            input(class="feedback__input" type="text" name="visitor-name" placeholder="Фамилия Имя Отчество")
+            input(class="feedback__input" type="text" name="phone" placeholder="Номер телефона")
+            input(class="feedback__input" type="text" name="email" placeholder="Ваша почта")
+            textarea(class="feedback__textarea" placeholder="Сообщение")
+            .feedback__agreement Заполнив форму, Вы даете свое согласие на обработку персональных данных. <br> Подробнее вы можете ознакомиться в следующем документе
+            .feedback__label-wrp
+              label(class="feedback__label") Даю согласие на обработку персональных данных
+                input(type="checkbox" name="agree")
+                span
+            .feedback__btn-container
+              button(class="feedback__btn" type="submit") отправить
+          .feedback__adress.
+            Вы без особого труда найдете нас по адресу ул. Пушкина дом Калатушкина <br> конешно вы можете позвонить по телефону +8-800-35-35

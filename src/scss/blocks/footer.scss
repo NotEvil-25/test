@@ -1,0 +1,102 @@
+.footer{
+    background-color: $gray38;
+    padding: 72px 0;
+    color: $whiteC4;
+    font-size: 13px;
+    line-height: 16px;
+
+    &__wrp{
+        max-width: 743px;
+        width: 100%;
+        margin: auto;
+    }
+
+    &__contacts-wrp{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__contacts-title{
+        margin-bottom: 25px;
+    }
+
+    &__contacts-container{
+        display: flex;
+        justify-content: space-between;
+        font-weight: 300;
+        margin-bottom: 25px;
+
+        @media(max-width: $laptop){
+            flex-direction: column;
+        }
+
+        a{
+            color: $whiteC4;
+
+            &:hover{
+                color: $white;
+            }
+
+            &:visited{
+                color: $whiteC4;
+            }
+        }
+    }
+
+    &__contacts-field{
+        &:not(:last-child){
+            margin-bottom: 20px;
+        }
+    }
+
+    &__socials-wrp{
+        margin-bottom: 48px;
+    }
+
+    &__socials-box{
+        width: 142px;
+        height: 23px;
+        display: flex;
+        justify-content: space-between;
+
+        a{
+            width: 23px;
+            height: 100%;
+
+            svg{
+                height: 100%;
+            }
+        }
+    }
+
+    &__copyright-company{
+        margin-bottom: 25px;
+    }
+
+    &__footer__copyright-wrp{
+        p{
+            font-size: 13px;
+            line-height: 16px;
+        }
+    }
+
+    &__copyright-links{
+        margin-top: 50px;
+    }
+
+    &__copyright-link{
+        color: $whiteC4;
+
+        &:not(:last-child){
+            margin-right: 70px;
+        }
+
+        &:visited{
+            color: $whiteC4;
+        }
+
+        &:hover{
+            color: $white;
+        }
+    }
+}

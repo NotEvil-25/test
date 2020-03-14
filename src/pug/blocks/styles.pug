@@ -1,0 +1,21 @@
+include ../mixins/title.pug
+
+mixin styles()
+  section.styles
+    .container
+      .styles__wrp
+        +title("Компания и", "Стили", "title--styles")
+        p.
+          Все началось с амбициозной цели. Цель повышать Italianness всемирно, через новаторскую конструкцию, передовую технологию, постоянн
+          научные исследования и  разработки и страсть для качества. День за днем это понятие приобретало форму в компании. Компания осознает свою
+          миссию: наблюдать,  достигать чего-то другого. Нечто особенное.
+      .styles__categories
+        .styles__category
+          img(src="static/images/card3.jpg" alt="style")
+          .styles__type
+            span современный
+        .styles__category
+          img(src="static/images/styles.jpg" alt="style")
+          .styles__type
+            span традиционный
+

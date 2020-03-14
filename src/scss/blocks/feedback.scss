@@ -1,0 +1,126 @@
+.feedback{
+    background-color: $greenEC;
+    padding: 71px 0 88px;
+
+    &__questions{
+        position: absolute;
+        top: 0;
+        left: -110px;
+        width: 84px;
+        height: 82px;
+    }
+
+    &__title{
+        font-size: 32px;
+        line-height: 30px;
+        color: $gray68;
+        margin-bottom: 60px;
+    }
+
+    &__agreement{
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: $grayA5;
+        margin-bottom: 11px;
+    }
+
+    &__container{
+        padding-left: 110px;
+    }
+
+    &__wrp{
+        position: relative;
+        max-width: 660px;
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__input{
+        border: none;
+        background: none;
+        color: $grayA5;
+        border-bottom: 2px solid $white;
+        padding: 15px 5px 15px 0;
+        margin-bottom: 3px;
+
+        &::placeholder{
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+
+    &__textarea{
+        margin-top: 26px;
+        border: none;
+        background: none;
+        color: $grayA5;
+        border-bottom: 2px solid $white;
+        padding: 15px 5px 15px 0;
+        resize: vertical;
+        height: 50px;
+        margin-bottom: 36px;
+
+        &::placeholder{
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+
+    &__label-wrp{
+        margin-bottom: 35px;
+    }
+
+    &__label{
+        position: relative;
+        padding-left: 32px;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: $grayA5;
+        cursor: pointer;
+
+        input{
+            display: none;
+        }
+
+        input:checked + span::before{
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            content: "";
+            height: 4px;
+            width: 7px;
+            border-left: 1px solid $gray61;
+            border-bottom: 1px solid $gray61;
+            transform: rotate(-45deg);
+        }
+
+        span{
+            position: absolute;
+            top: 2px;
+            left: 0;
+            width: 12px;
+            height: 12px;
+            background-color: $white;
+        }
+    }
+
+    &__btn-container{
+        margin-bottom: 95px;
+    }
+
+    &__btn{
+        border: 2px solid $white;
+        height: 72px;
+        max-width: 360px;
+        width: 100%;
+        color: $gray61;
+        background-color: $greenEC;
+    }
+}

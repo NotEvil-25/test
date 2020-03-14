@@ -1,0 +1,11 @@
+include headerTop.pug
+
+mixin header()
+  header.header
+    +headerTop()
+    .header__banner
+      img(src="static/images/headerBanner.jpg" alt="test")
+      .header__buttons
+        button.header__play-video
+          include ../../static/svg/Play.svg
+        button.header__scroll
